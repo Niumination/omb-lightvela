@@ -1,79 +1,77 @@
-# OMB LightVela — OpenMausBot deployment
+# OMB LightVela — OpenMausBot stack produksi (maus.abstract.biz.id)
 
-Stack produksi **OpenMausBot (OMB)** yang berjalan di `https://maus.abstract.biz.id`.
+Repo ini berisi **seluruh setup & konfigurasi** stack OMB aktif yang jalan di
+`https://maus.abstract.biz.id` (server LightVela). Image produksi:
+[`zaryu/omb-lightvela`](https://hub.docker.com/r/zaryu/omb-lightvela)
+(tag `2026-10-18` / `latest`, public).
 
 ## Arsitektur
 
 ```
-Internet ──► Cloudflare Tunnel ──► Caddy (network_mode: service:omb)
-                                        │
-                                        ▼
-                              Container OMB (omb-lightvela:2026-10-18)
-                              port 8799 (app) + 8800 (webhook)
-                                        │
-                              ┌─────────┴─────────┐
-                              ▼                   ▼
-                    omb-9router (20128)     Engine AI (opencode,
-                    container berdiri       claude-code, codex, grok)
-                    sendiri, alias
-                    `omb-9router` di
-                    network openmausbot_default
+Cloudflare Tunnel (maus.abstract.biz.id)
+  └─ caddy (openmausbot-caddy-1)      network_mode: service:omb — TLS termination
+       └─ omb (openmausbot-omb-1)     image zaryu/omb-lightvela:2026-10-18, port 8799
+            ├─ volume openmausbot_data:/data (config.json, bots.json, sesi, opencode auth)
+            ├─ bind mount opencode.json → /data/.config/opencode/opencode.json (RW)
+            └─ → 9router (omb-9router)  container berdiri sendiri, network openmausbot_default
+                 ├─ image decolua/9router:0.5.104 (upstream public)
+                 ├─ volume omb_9router_data:/app/data (providers, keys, combos)
+                 ├─ dashboard: 127.0.0.1:20129/dashboard
+                 └─ providers: agnes (E2E ✓), nous (OAuth auto-refresh ✓), oc/* (403 IP-gate),
+                    katalog 29 model — detail: config/9ROUTER-STATE.md
 ```
 
-- **OMB** = `openmausbot-omb-1`, image `omb-lightvela:2026-10-18`, dibangun
-  dari [Dockerfile](Dockerfile) di atas base `ghcr.io/milind-soni/openmausbot:latest`.
-- **9router** = `omb-9router`, image `decolua/9router:0.5.104`, volume
-  `omb_9router_data`. Tidak ikut compose supaya bisa di-restart tanpa
-  menyentuh OMB (Caddy memakai `network_mode: service:omb`).
-- **Caddy** = reverse proxy + TLS termination (Cloudflare Tunnel di depan).
-
-## Provider model
-
-| Provider | Jalur | Catatan |
-|---|---|---|
-| 9router (agnes, nous) | `opencode.json` → `http://omb-9router:20128/v1` | default: `9router/agnes/agnes-2.5-flash` |
-| OpenRouter | config OMB (`openrouter.key`) | |
-| Huancheng | config OMB (`openaiCompat`, `api.hcnsec.cn/v1`) | |
-| opencode free (`oc/*`) | via 9router | 403 dari IP datacenter (gate opencode.ai) |
+Provider lain di config OMB: **huancheng** via `openaiCompatible` langsung
+(`https://api.hcnsec.cn/v1` — bukan lewat 9router), **openrouter**.
 
 ## Isi repo
 
 ```
-compose.yaml          Compose utama (OMB + Caddy)
-compose.override.yaml Override: NINEROUTER_API_KEY + mount opencode.json
-Dockerfile            Image OMB (base openmausbot + engines)
-Caddyfile             Config Caddy
-config/config.json    Config OMB (secrets di-REDACTED)
-config/opencode.json  Katalog model 9router untuk engine opencode
-config/bots.json      Definisi bot
-config/run-9router.sh Jalankan 9router (container berdiri sendiri)
+compose.yaml          stack omb + caddy (build image dari Dockerfile)
+compose.override.yaml tambahan: env NINEROUTER_API_KEY + bind mount opencode.json
+Dockerfile            base ghcr.io/milind-soni/openmausbot + opencode + grok CLI
+Caddyfile             reverse proxy + TLS internal (tunnel di depan)
+.env.example          variabel yang perlu diisi (salin → .env)
+config/config.json    config OMB (secrets = [REDACTED] — isi live: providerKeys,
+                      openrouter, composio, huancheng, opencodeGo)
+config/opencode.json  katalog 20 model 9router (agnes/nous/oc/mmf/combo)
+config/bots.json      definisi bot
+config/run-9router.sh jalankan omb-9router (container berdiri sendiri)
+config/9ROUTER-STATE.md  state aktual 9router: providers, keys, combos, katalog
 ```
 
-## Menjalankan
+## Menjalankan dari nol
 
 ```bash
-# 1. Network + secret
-docker network create openmausbot_default 2>/dev/null || true
-export NINEROUTER_API_KEY=<key dari 9router>
-
-# 2. Build & start OMB + Caddy
+# 1. OMB + Caddy
+cp .env.example .env          # isi NINEROUTER_API_KEY dst.
+docker compose -f compose.yaml -f compose.override.yaml build
 docker compose -f compose.yaml -f compose.override.yaml up -d
 
-# 3. 9router (sekali, atau saat update)
-./config/run-9router.sh
+# 2. 9router (container terpisah — TIDAK jadi service compose)
+bash config/run-9router.sh
+# lalu seed providers/API keys via dashboard 127.0.0.1:20129/dashboard
+# (atau restore backup volume omb_9router_data)
+
+# 3. Config OMB: isi providerKeys/openrouter/huancheng di config.json
+#    (nilai aktual tersimpan di volume openmausbot_data → /data/.openmausbot/config.json)
+
+# 4. Pairing WhatsApp: dashboard OMB > pairing code
 ```
 
 ## Catatan operasional penting
 
-- **Recreate OMB harus selalu `docker compose -f compose.yaml -f compose.override.yaml up -d`**
-  (tanpa target service) — kalau hanya recreate `omb`, Caddy kehilangan
-  network namespace dan `maus.abstract.biz.id` jadi 502.
-- `opencode.json` adalah **bind mount yang ditulis OMB sendiri** (merge).
-  Edit dari host bikin inode baru → container masih membaca file lama.
-  Untuk update pakai base64 + `docker exec -u root`.
-- 9router refresh token nous otomatis; kalau `nous/*` 401 cek
-  `providerConnections` di `omb_9router_data`.
-
-## Lisensi
-
-Lihat LICENSE proyek hulu [OpenMausBot](https://github.com/milind-soni/OpenMausBot).
+- **Recreate OMB wajib pakai kedua file compose** (`-f compose.yaml -f
+  compose.override.yaml`) tanpa menarget service tertentu — Caddy memakai
+  `network_mode: service:omb`, recreate parsial bikin Caddy 502.
+- **opencode.json = bind mount**: mengedit file host lewat tool biasa membuat
+  inode baru sehingga container tetap melihat file lama. Update in-place
+  (mis. tulis via `docker cp` ke /tmp lalu copy internal), atau recreate OMB.
+- **nous**: 9router refresh otomatis via refresh_token (portal.nousresearch.com,
+  client_id `hermes-cli`). Refresh token one-time-use; kalau rusak → device flow ulang.
+- **oc/\***: selalu 403 dari IP datacenter (FreeTierError, gate opencode.ai) —
+  bukan masalah config; butuh egress IP residential.
+- **9router dashboard**: password bcrypt di DB (`settings.password`); default
+  via `INITIAL_PASSWORD`. Reset manual = tulis bcrypt hash langsung ke DB.
+- Docker 29 + containerd snapshotter: image lama bisa "index tanpa layer"
+  (push gagal *no platform*) → build ulang dari Dockerfile.
