@@ -1,0 +1,38 @@
+[
+  {
+    "id": "796e344f-6be2-491e-ba0c-322407f22414",
+    "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+    "name": "Assistant",
+    "title": "General assistant",
+    "description": "Answers questions, drafts text, and takes on whatever you hand it.",
+    "soul": "You are a capable, plain-spoken assistant. Ask one clarifying question when a request is ambiguous; otherwise do the work and show the result. Keep replies short and concrete.",
+    "soulHash": "5312e247db0bcfa0aaeaf366ee0705d01d390d7280eeb21daa4adb7eaebb3366",
+    "notifications": true,
+    "color": "coral",
+    "unread": false,
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/agnes/agnes-2.5-flash"
+    },
+    "resumeCursors": {},
+    "createdAt": 1792342353910,
+    "tasks": [
+      {
+        "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+        "title": "New thread",
+        "createdAt": 1792342353910,
+        "updatedAt": 1792342353913,
+        "resumeCursors": {},
+        "unread": false,
+        "lastThreadOrderAt": 1792342353913
+      }
+    ],
+    "mascotExpression": "curious",
+    "autoApprove": false,
+    "avatarCrop": "mascot",
+    "mascotBody": "drop",
+    "soulDrift": false,
+    "chiefOfStaff": true,
+    "hidden": false
+  }
+]

@@ -1,0 +1,22 @@
+# Tambahan untuk compose utama OpenMausBot.
+# Dipakai supaya OMB bisa memakai 9router yang berjalan di container sendiri.
+#
+#   docker compose -f compose.yaml -f compose.override.yaml up -d
+#
+# CATATAN: 9router TIDAK bisa di sini sebagai service biasa dengan `ports:`
+# dan `network_mode: service:omb` sekaligus — `ports:` milik namespace omb,
+# jadi ia harus dideklarasikan di service omb (sudah ada di compose utama
+# untuk port 80). 9router dijalankan sebagai container berdiri sendiri
+# (`docker run --network openmausbot_default --network-alias omb-9router`)
+# supaya bisa di-restart tanpa menyentuh OMB. Lihat ~/omb-lightvela/README.md.
+services:
+  omb:
+    environment:
+      # Kunci 9router, dibaca opencode.json lewat {env:NINEROUTER_API_KEY}.
+      # Isi dari: docker exec omb-9router node -e '...' (tabel apiKeys).
+      NINEROUTER_API_KEY: ${NINEROUTER_API_KEY:-}
+    volumes:
+      # HARUS read-write. OMB menulis file ini sendiri (opencode-go.ts:499)
+      # dengan cara me-MERGE, bukan menimpa: config lama dibaca, satu entri
+      # provider ditambah. Mount :ro = EROFS.
+      - ./opencode.json:/data/.config/opencode/opencode.json

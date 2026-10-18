@@ -1,0 +1,153 @@
+{
+  "onboarding": {
+    "completedAt": "2026-10-15T07:42:07.178Z",
+    "version": 1,
+    "hintsSeen": [
+      "tour.composer",
+      "tour.model",
+      "tour.computer",
+      "tour.computer-browser",
+      "tour.tools",
+      "tour.apps",
+      "tour.apps-panel",
+      "tour.automations",
+      "tour.automations-page",
+      "tour.done",
+      "spot.approval"
+    ]
+  },
+  "openrouter": {
+    "key": "REDACTED"
+  },
+  "composio": {
+    "apiKey": "REDACTED",
+    "userId": "openmausbot_afad93e1-53e1-418a-8268-1882e886200c",
+    "sessionId": "trs_rHYyoJw-eIv2"
+  },
+  "browserProfiles": [
+    {
+      "id": "profile-54115916eded418981569a96583a308c",
+      "name": "archk4li"
+    }
+  ],
+  "openai": {
+    "key": ""
+  },
+  "openaiCompat": {
+    "key": "REDACTED",
+    "url": "https://api.hcnsec.cn/v1"
+  },
+  "profile": {
+    "name": "Niumination",
+    "email": ""
+  },
+  "opencodeGo": {
+    "providerKeys": {
+      "NINEROUTER_API_KEY": "REDACTED"
+    },
+    "apiKey": ""
+  },
+  "defaultModelSelection": {
+    "instanceId": "opencodeGo",
+    "model": "9router/agnes/agnes-2.5-flash"
+  },
+  "instances": {
+    "grok": {
+      "driver": "grokAgent"
+    },
+    "kimi": {
+      "driver": "kimiAgent"
+    },
+    "droid": {
+      "driver": "droidAgent"
+    },
+    "cursor": {
+      "driver": "cursorAgent"
+    },
+    "claude": {
+      "driver": "claudeAgent"
+    },
+    "codex": {
+      "driver": "codex"
+    },
+    "chatgpt": {
+      "driver": "codex",
+      "displayName": "ChatGPT plan"
+    },
+    "antigravity": {
+      "driver": "antigravityAgent"
+    },
+    "opencodeGo": {
+      "driver": "opencodeGo",
+      "config": {
+        "cli": "/usr/local/bin/opencode"
+      }
+    },
+    "openaiCompat": {
+      "driver": "openai-compat"
+    },
+    "mistral": {
+      "driver": "mistral"
+    },
+    "cerebras": {
+      "driver": "cerebras"
+    },
+    "groq": {
+      "driver": "groq"
+    },
+    "meta": {
+      "driver": "meta"
+    },
+    "museCode": {
+      "driver": "museCode"
+    },
+    "openai": {
+      "driver": "openai-compat",
+      "displayName": "OpenAI",
+      "icon": {
+        "kind": "preset",
+        "preset": "openai"
+      },
+      "access": "api"
+    },
+    "claudeApi": {
+      "driver": "claudeAgent",
+      "displayName": "Claude (API key)",
+      "icon": {
+        "kind": "preset",
+        "preset": "anthropic"
+      },
+      "access": "api"
+    },
+    "xaiApi": {
+      "driver": "grok",
+      "displayName": "xAI",
+      "icon": {
+        "kind": "preset",
+        "preset": "xai"
+      },
+      "access": "api"
+    },
+    "openrouter": {
+      "driver": "openai-compat",
+      "displayName": "OpenRouter",
+      "icon": {
+        "kind": "preset",
+        "preset": "openrouter"
+      },
+      "access": "api"
+    },
+    "qwen": {
+      "driver": "qwenAgent"
+    },
+    "hermes": {
+      "driver": "hermesAgent"
+    },
+    "cline": {
+      "driver": "clineAgent"
+    },
+    "pi": {
+      "driver": "piAgent"
+    }
+  }
+}
