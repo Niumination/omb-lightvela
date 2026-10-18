@@ -24,6 +24,10 @@ Cloudflare Tunnel (maus.abstract.biz.id)
 Provider lain di config OMB: **huancheng** via `openaiCompatible` langsung
 (`https://api.hcnsec.cn/v1` — bukan lewat 9router), **openrouter**.
 
+> **Secrets**: nilai aktual (API keys, token) tidak ada di repo ini —
+> semuanya ada di repo private **[Niumination/omb-lightvela-secrets](https://github.com/Niumination/omb-lightvela-secrets)**
+> (config.json utuh, .env server, backup volume 9router).
+
 ## Isi repo
 
 ```
