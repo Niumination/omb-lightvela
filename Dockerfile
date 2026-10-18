@@ -1,8 +1,17 @@
 ARG BASE_IMAGE=ghcr.io/milind-soni/openmausbot:latest
 FROM ${BASE_IMAGE}
 USER root
-ARG ENGINES="@anthropic-ai/claude-code @openai/codex"
+ARG ENGINES=""
 RUN if [ -n "$ENGINES" ]; then npm install -g $ENGINES; fi
+# opencode CLI — dipakai provider oc/* via 9router (auth device flow ke ~/.local/share/opencode).
+ARG OPENCODE_VERSION=1.19.3
+RUN if [ -n "$OPENCODE_VERSION" ]; then \
+      HOME=/tmp/oc-install curl -fsSL https://opencode.ai/install | \
+        HOME=/tmp/oc-install bash -s -- -v $OPENCODE_VERSION --no-modify-path; \
+      install -m 0755 /tmp/oc-install/.opencode/bin/opencode /usr/local/bin/opencode; \
+      rm -rf /tmp/oc-install; \
+      opencode --version | grep -qF "$OPENCODE_VERSION"; \
+    fi
 # Grok Build from xAI's own installer, pinned and installed the same way as
 # the Cloud image (the Dockerfile's cloud-home target); it signs in from the
 # app with a device code into ~/.grok on the data volume. GROK_VERSION= leaves
