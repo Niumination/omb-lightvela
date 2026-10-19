@@ -10,7 +10,7 @@ Jalankan ulang: `./run-9router.sh`.
 - `headroomEnabled: false` — HEADROOM mati (log spam)
 - `cavemanEnabled: true`, `ponytailEnabled: true`
 - `providerOverrides: {}`, `comboStrategies: {}`
-- Password dashboard: hash bcrypt di `settings.password` (volume). Aktual: `lightvela`
+- Password dashboard: hash bcrypt di `settings.password` (volume). Nilai aktual TIDAK didokumentasikan di repo ini (pernah bocor di sini — sudah diganti).
 
 ### Provider connections
 - `agnes` — aktif (E2E ✓)
