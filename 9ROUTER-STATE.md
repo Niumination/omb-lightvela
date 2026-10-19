@@ -34,7 +34,7 @@ Jalankan ulang: `./run-9router.sh`.
 
 - `oc/*` = provider noAuth hardcoded, fetch live dari `opencode.ai/inference/v1`.
   Dari IP datacenter selalu 403 FreeTierError (gate IP opencode.ai) —
-  bukan masalah config. Solusi = egress IP residential (belum ada server kedua).
+  bukan masalah config. TIDAK di-bypass (anti-abuse maintainer eksplisit); gunakan agnes/nous.
 - nous token expired tidak masalah: 9router refresh sendiri via refresh_token.
 - Kalau volume hilang: dashboard password = `INITIAL_PASSWORD` env
   (lihat run-9router.sh), lalu seed ulang providers/keys/combos manual
