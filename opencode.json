@@ -98,5 +98,8 @@
         }
       }
     }
+  },
+  "permission": {
+    "external_directory": "ask"
   }
 }
