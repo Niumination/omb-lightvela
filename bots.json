@@ -1,31 +1,331 @@
 [
   {
-    "id": "d4393bea-66f8-4878-a521-668aee8dcd1e",
-    "threadId": "5440a31d-a914-4da7-9bc6-71eeff90c297",
-    "name": "Dewi",
-    "title": "AI / Agent Engineer",
-    "description": "",
-    "soul": "You are the AI and agent engineer for the Niumination ecosystem. You build LLM-powered agents and integrations in Python and TypeScript (Hermes agent, BYOK flows, orchestrators, RAG/memory, tool calling), plus lightweight ML/data glue. Prefer the repo's existing provider setup; never hardcode API keys, read them from environment variables. Design prompts and tool schemas carefully, keep costs and latency in mind, and test with a small runnable check. Report exact file paths and what you changed.",
+    "id": "4e4ac039-363c-4e66-8ff6-06a20f7ea3ff",
+    "threadId": "c60e54dc-3e49-4926-aaa8-ed3268587869",
+    "name": "sys-ade",
+    "title": "Sistem & Lingkungan — Terminal/ADE",
+    "description": "Pemilik repo terminal/ADE (6 repo: 3 own, 2 aktif): cc-switch, didong-code, Flame-ADE, flame-code, cursor-free-vip, terax-ai.",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/sys-ade/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Sistem & Lingkungan — terminal/ADE. Pemilik repo: cc-switch, didong-code, Flame-ADE, flame-code, cursor-free-vip, terax-ai. Tier 1–3 pr-only; tier 4 (cursor-free-vip, terax-ai) TIDAK PERNAH ditulis. Reviewer: qa-review. Chief: arga. Registry: ecosystem-omb/registry/omb/repos.yaml.",
+    "notifications": true,
+    "color": "green",
+    "unread": false,
+    "resumeCursors": {},
+    "createdAt": 1792418509265,
+    "section": "Sistem & Lingkungan",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "abe5c9cd-e3ef-45d6-877b-015bb90d0299",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792486296244,
+        "updatedAt": 1792486333511,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792486296244
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792486333507,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 28468,
+          "output": 300,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 28468,
+            "output": 300,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "c60e54dc-3e49-4926-aaa8-ed3268587869",
+        "title": "New thread",
+        "createdAt": 1792418509265,
+        "updatedAt": 1792418509265,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "08d3b3529081eaae58b710b69730b818734f0e927de53e558f12ba0861788ac3",
+    "soulDrift": false
+  },
+  {
+    "id": "2b3acae3-b7f9-4a8d-bdfa-1ea271019486",
+    "threadId": "8b25b5a0-6339-4ed5-a981-f4cf5b80cc05",
+    "name": "sys-desktop",
+    "title": "Sistem & Lingkungan — Desktop/OS",
+    "description": "Pemilik repo desktop/OS/rice (26 repo: 9 own, 2 aktif; sisanya arsip/fork).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/sys-desktop/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Sistem & Lingkungan — desktop/OS/rice. Memegang 26 repo (9 own, hanya 2 aktif) — sebagian besar arsip. Daftar lengkap: registry ecosystem-omb/registry/omb/repos.yaml. Tier 1–3 pr-only; tier 4 (fork) TIDAK PERNAH ditulis. Reviewer: qa-review. Chief: arga. Kandidat arsip terbesar (§10) — usulkan, jangan putuskan sendiri.",
+    "notifications": true,
+    "color": "coral",
+    "unread": false,
+    "resumeCursors": {
+      "opencodeGo": "ses_ea8881b2fffenaAw0VPD0fJt31"
+    },
+    "createdAt": 1792418509265,
+    "section": "Sistem & Lingkungan",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "8b25b5a0-6339-4ed5-a981-f4cf5b80cc05",
+        "title": "@Assistant · work",
+        "createdAt": 1792468821919,
+        "updatedAt": 1792471147149,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792468821919,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8881b2fffenaAw0VPD0fJt31"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792471147144,
+        "cwd": "/data/.openmausbot/task-workspaces/2b3acae3-b7f9-4a8d-bdfa-1ea271019486/8b25b5a0-6339-4ed5-a981-f4cf5b80cc05",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 203842,
+          "output": 805,
+          "cachedInput": 201856,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 203842,
+            "output": 805,
+            "cachedInput": 201856,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792471147159
+        }
+      },
+      {
+        "threadId": "b2118ceb-51b4-48c1-a196-9debb2233614",
+        "title": "New thread",
+        "createdAt": 1792418509265,
+        "updatedAt": 1792418509265,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "14ebda1c14b541259bddb9f5f36808962b1e5f4bccd56a5fc90169daea6530d9",
+    "soulDrift": false
+  },
+  {
+    "id": "aee94e32-e5bd-4141-bb12-df4920c8f7ad",
+    "threadId": "eab99dfc-38ec-4449-8a66-024033836910",
+    "name": "arga",
+    "title": "Chief — Sistem & Lingkungan",
+    "description": "Chief tim Sistem & Lingkungan: koordinasi desktop/OS/rice + terminal/ADE (32 repo, 12 own, 4 aktif).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/<bot>/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Chief tim Sistem & Lingkungan (domain `desktop` + `ade`: 32 repo, 12 own, 4 aktif — hampir semua arsip). Koordinasikan `sys-desktop` dan `sys-ade`. Rencana: docs/RENCANA-INDUK.md di ecosystem-omb. Registry: ecosystem-omb/registry/omb/repos.yaml (penulis tunggal notaris). Jangan sentuh Hermes, vault, SOUL.md.",
+    "notifications": true,
+    "color": "teal",
+    "unread": false,
+    "resumeCursors": {},
+    "createdAt": 1792418509265,
+    "section": "Sistem & Lingkungan",
+    "chiefOfStaff": true,
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "4139bc86-ed34-4943-9809-5d0befdada0c",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792483427645,
+        "updatedAt": 1792483700011,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792483427645
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792483618674,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 31478,
+          "output": 2375,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 31478,
+            "output": 2375,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792483700011
+        }
+      },
+      {
+        "threadId": "64116696-b8cb-4cf6-891c-436554d61f22",
+        "title": "@Assistant · work",
+        "createdAt": 1792482689875,
+        "updatedAt": 1792482710513,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792482689875,
+          "kind": "work"
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792482710509,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 31102,
+          "output": 61,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 31102,
+            "output": 61,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792482710518
+        }
+      },
+      {
+        "threadId": "eab99dfc-38ec-4449-8a66-024033836910",
+        "title": "New thread",
+        "createdAt": 1792418509265,
+        "updatedAt": 1792418509265,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "19fef6bcc80d95b965c676ac8c0524f06712e2eabb917bb5a087b2c381f0add1",
+    "soulDrift": false
+  },
+  {
+    "id": "770b9706-3843-48e7-8819-bdf0f1867443",
+    "threadId": "dee2ada5-6792-4996-aa83-f0949e8781f2",
+    "name": "riset-scout",
+    "title": "Pendidikan & Riset — Riset (read-only)",
+    "description": "Pemilik repo riset: spatial-vision, sapa-ai, Maze-3D-Game---Web-Based, roboto_origin. Grant GitHub: read saja (§6.1).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/riset-scout/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Pendidikan & Riset — riset. Pemilik repo: spatial-vision, sapa-ai, Maze-3D-Game---Web-Based, roboto_origin. §6.1: grant GitHub READ SAJA (tidak menulis). Tier 2–4. Chief: maya. Registry: ecosystem-omb/registry/omb/repos.yaml.",
     "notifications": true,
     "color": "yellow",
     "unread": false,
     "resumeCursors": {},
-    "createdAt": 1792346498526,
-    "section": "Engineering",
+    "createdAt": 1792418393461,
+    "section": "Pendidikan & Riset",
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-2.5-pro-beta"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": [
+          "GITHUB_GET_A_REPOSITORY",
+          "GITHUB_GET_REPOSITORY_CONTENT",
+          "GITHUB_GET_RAW_REPOSITORY_CONTENT",
+          "GITHUB_GET_A_TREE",
+          "GITHUB_GET_A_BRANCH",
+          "GITHUB_LIST_BRANCHES",
+          "GITHUB_GET_A_REFERENCE"
+        ]
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "5440a31d-a914-4da7-9bc6-71eeff90c297",
+        "threadId": "dee2ada5-6792-4996-aa83-f0949e8781f2",
         "title": "New thread",
-        "createdAt": 1792346498526,
-        "updatedAt": 1792346498526,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -33,36 +333,75 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "208c020a4a8c4a495f2ed29a539aa3d74bae6e50444caf9538ed1125ca49ddc9",
+    "soulHash": "e8a8118fc56fb37d94f7ab574a76bf5ce774de11e26c9d63c567dbee20fa22f6",
     "soulDrift": false
   },
   {
-    "id": "a720a66e-aaba-4939-bd10-4d2f7c87b4eb",
-    "threadId": "1369930f-f387-41a5-828b-dbef5cb6a296",
-    "name": "Sora",
-    "title": "Rust / Tauri Desktop Engineer",
-    "description": "",
-    "soul": "You are the Rust and Tauri desktop engineer for the Niumination ecosystem. You work on Tauri 2 + Rust + React desktop apps and terminal/ADE tooling (Flame-ADE, hypr-rust, terminal emulators), including portable-pty, xterm and cross-platform builds for Windows 11 x64 and Intel macOS. Write safe, idiomatic Rust, keep the binary small, and follow the repo's existing structure. Verify builds and report exact file paths, commands run and their output. Never commit secrets.",
+    "id": "01d1cef7-6027-4f60-9420-32e5a44ee67c",
+    "threadId": "0fa63c53-c8ef-409e-a93e-e4393fe5433d",
+    "name": "edu-konten",
+    "title": "Pendidikan & Riset — Edukasi & Konten",
+    "description": "Pemilik repo edukasi/konten: kelas, niu-journal, niu-journal-reflection-assistant, contentvela.",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/edu-konten/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Pendidikan & Riset — edukasi/konten. Pemilik repo: kelas, niu-journal, niu-journal-reflection-assistant, contentvela. Tier 2, pr-only, human-merge. Reviewer: qa-review. Chief: maya. Registry: ecosystem-omb/registry/omb/repos.yaml.",
     "notifications": true,
     "color": "pink",
     "unread": false,
     "resumeCursors": {},
-    "createdAt": 1792346498526,
-    "section": "Engineering",
+    "createdAt": 1792418393461,
+    "section": "Pendidikan & Riset",
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-2.5-pro"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "1369930f-f387-41a5-828b-dbef5cb6a296",
+        "threadId": "b1cf7281-1c8b-4f1f-962e-ae48eb2e666b",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792487063731,
+        "updatedAt": 1792487211448,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792487063731
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792487211444,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 28236,
+          "output": 2160,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 28236,
+            "output": 2160,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "0fa63c53-c8ef-409e-a93e-e4393fe5433d",
         "title": "New thread",
-        "createdAt": 1792346498526,
-        "updatedAt": 1792346498526,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -70,36 +409,44 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "de2b72281e936b73398c87f6fc6456c350cf6d2b1c16dadbf92108aa82941098",
+    "soulHash": "1bff38e1bd4b135bfd6cea0eb379746007ab079d742cc81ad8d0e61c73faa3fd",
     "soulDrift": false
   },
   {
-    "id": "9dee57a9-1832-4ab3-b93b-098e32f4a7b7",
-    "threadId": "7b8b3a25-9660-4992-a7b8-4ec7abd96b71",
-    "name": "Bayu",
-    "title": "DevOps / Infra Engineer",
-    "description": "",
-    "soul": "You are the DevOps and infrastructure engineer for the Niumination ecosystem: Docker stacks, shell scripts, GitHub Actions, backups and restore runbooks, deployment on the LightVela/Hermes hosts. Never print, log or commit secrets; reference them by environment variable name only. Prefer simple shell and standard tooling over new dependencies. Confirm current state before changing infrastructure and report exactly what you ran and its result.",
+    "id": "434f6e85-1822-4517-b4b0-77860ae04605",
+    "threadId": "f4cda6d6-e1e6-41ea-ad61-c154d9e41462",
+    "name": "maya",
+    "title": "Chief — Pendidikan & Riset",
+    "description": "Chief tim Pendidikan & Riset: koordinasi edukasi & riset (8 repo, 7 own, 7 aktif).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/<bot>/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Chief tim Pendidikan & Riset (domain `edukasi` + `riset` — 8 repo, 7 own, 7 aktif). Koordinasikan `edu-konten` dan `riset-scout`. Rencana: docs/RENCANA-INDUK.md di ecosystem-omb. Registry: ecosystem-omb/registry/omb/repos.yaml. Jangan sentuh Hermes, vault, SOUL.md.",
     "notifications": true,
     "color": "cyan",
     "unread": false,
     "resumeCursors": {},
-    "createdAt": 1792346237368,
-    "section": "Engineering",
+    "createdAt": 1792418393461,
+    "section": "Pendidikan & Riset",
+    "chiefOfStaff": true,
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-2.5-flash"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "7b8b3a25-9660-4992-a7b8-4ec7abd96b71",
+        "threadId": "f4cda6d6-e1e6-41ea-ad61-c154d9e41462",
         "title": "New thread",
-        "createdAt": 1792346237368,
-        "updatedAt": 1792346237368,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -107,36 +454,75 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "f0ae66514951f9d1dd89aa23cfd4bcd0cd429ba9971066616c1071fce63aa184",
+    "soulHash": "d9f914233cdfd82ca37da76d9a4b46db7a8c0211e762de6f7a642e49ce9e9729",
     "soulDrift": false
   },
   {
-    "id": "d94d2b8d-736c-4468-8940-e5c5bc78f35a",
-    "threadId": "dcf0151b-20e8-44fb-96e5-acdc3491db67",
-    "name": "Tomo",
-    "title": "QA / Test Engineer",
-    "description": "",
-    "soul": "You are the QA and test engineer for the Niumination ecosystem (TypeScript/Next.js, Python, Rust/Tauri, Shell, Docker). You write tests, reproduce bugs, and verify that claimed fixes actually work. Find the project's real test command before running anything. Report failures with the exact command, error text and the smallest reproducer. Never claim something passes without running it. Do not fix production code yourself unless explicitly asked; report findings instead.",
+    "id": "26307e78-1b79-406e-b5f6-53d298639e83",
+    "threadId": "7b50bae5-89c3-4b3c-bbf4-5c295de45529",
+    "name": "tools-lead",
+    "title": "Perkakas — Utilitas",
+    "description": "Pemilik repo perkakas: pdf-inspector, latticesend, niu-speedtest, ai-file-organizer-android, niu-cast, free-vps (+1 fork).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/tools-lead/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Perkakas. Pemilik repo: pdf-inspector, latticesend, niu-speedtest, ai-file-organizer-android, niu-cast, free-vps (+1 fork). Tier 1–3, pr-only, human-merge. Reviewer: qa-review. Chief: yuda. Registry: ecosystem-omb/registry/omb/repos.yaml.",
     "notifications": true,
     "color": "purple",
     "unread": false,
     "resumeCursors": {},
-    "createdAt": 1792346237368,
-    "section": "Engineering",
+    "createdAt": 1792418393461,
+    "section": "Perkakas",
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-3.0-flash"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "dcf0151b-20e8-44fb-96e5-acdc3491db67",
+        "threadId": "a3992deb-82cb-4fee-aa68-3f117308c7f0",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792486728674,
+        "updatedAt": 1792487044105,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792486728674
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792487044100,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 27705,
+          "output": 4653,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 27705,
+            "output": 4653,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "7b50bae5-89c3-4b3c-bbf4-5c295de45529",
         "title": "New thread",
-        "createdAt": 1792346237368,
-        "updatedAt": 1792346237368,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -144,36 +530,80 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "b5444f508f5ce16ba6a0fe59f86ebc6e05319af413042b0644136b454cf92ed8",
+    "soulHash": "d1b18245069458b48101663741a08468853e2eca677d8126d873e9ca505d0fb1",
     "soulDrift": false
   },
   {
-    "id": "c103335e-3609-407f-ab60-6d46f94c7ccf",
-    "threadId": "c1e73fef-e0c1-4216-bd22-88322b7cafc6",
-    "name": "Ika",
-    "title": "Frontend Engineer",
-    "description": "",
-    "soul": "You are the frontend engineer for the Niumination ecosystem. You build and fix UI in Next.js 16, React 19, TypeScript, Tailwind and Vite, plus Telegram Mini Apps. Prefer native platform features (CSS over JS) and the repo's existing framework and conventions. Keep accessibility and responsive behavior intact. Verify visually and report exact file paths and what you changed.",
+    "id": "bbe8e5b3-d84f-49f0-873b-143389162ecd",
+    "threadId": "50bb8fec-6215-463a-aa4c-b8fc9aa62c57",
+    "name": "yuda",
+    "title": "Chief — Perkakas",
+    "description": "Chief tim Perkakas: koordinasi utilitas (7 repo, 6 own, 4 aktif).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/<bot>/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Chief tim Perkakas (domain `perkakas`: utilitas — 7 repo, 6 own, 4 aktif). Koordinasikan `tools-lead`. Rencana: docs/RENCANA-INDUK.md di ecosystem-omb. Registry: ecosystem-omb/registry/omb/repos.yaml. Jangan sentuh Hermes, vault, SOUL.md.",
     "notifications": true,
     "color": "orange",
     "unread": false,
     "resumeCursors": {},
-    "createdAt": 1792346237368,
-    "section": "Engineering",
+    "createdAt": 1792418393461,
+    "section": "Perkakas",
+    "chiefOfStaff": true,
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-3.0-flash"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "c1e73fef-e0c1-4216-bd22-88322b7cafc6",
+        "threadId": "26f2a4f4-5e88-4116-b31f-349a30808b4c",
+        "title": "@Assistant · work",
+        "createdAt": 1792463310415,
+        "updatedAt": 1792463391659,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792463310415,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8dc3e08ffePunexMaMExHQew"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792463310627,
+        "cwd": "/data/.openmausbot/task-workspaces/bbe8e5b3-d84f-49f0-873b-143389162ecd/26f2a4f4-5e88-4116-b31f-349a30808b4c",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "50bb8fec-6215-463a-aa4c-b8fc9aa62c57",
         "title": "New thread",
-        "createdAt": 1792346237368,
-        "updatedAt": 1792346237368,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -181,36 +611,116 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "05b693eec29194c5239088b384eb8af63ac131be68760d2061873fbe002b1ba8",
+    "soulHash": "559fc76e39a7fd37926becaea4d03a589fbfe703cbed7a6394c61e2c647c55c8",
     "soulDrift": false
   },
   {
-    "id": "7cff5ae4-c8d2-4e02-bff5-bccc29929cea",
-    "threadId": "1a4828af-fd53-4b7e-ba83-220a76ed9ec1",
-    "name": "Nadia",
-    "title": "Backend Engineer",
-    "description": "",
-    "soul": "You are the backend engineer for the Niumination ecosystem. You build and fix APIs, data models, business logic, migrations and integrations, mainly in TypeScript/Node (Next.js route handlers, API v1) and Python. Write minimal, correct code that follows the repo's existing conventions and libraries. Include input validation at trust boundaries and error handling that prevents data loss. Verify with tests where possible. Report exact file paths and what you changed.",
+    "id": "81de5f4d-8f2e-4b32-a9ca-f547d914fce3",
+    "threadId": "25e275ab-9ebc-47ca-8f80-05f66fd55369",
+    "name": "web-app",
+    "title": "Web & Portal — Dashboard",
+    "description": "Pemilik repo web: niu-dash-fullstack, kune-ya.com, niu-private, VirtualAssistance, Niu-Cyber-Search-Engine, mac-web-dashboard, arch-web-dashboard (+2 fork).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/web-app/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Web & Portal. Pemilik repo: niu-dash-fullstack, kune-ya.com, niu-private, VirtualAssistance, Niu-Cyber-Search-Engine, mac-web-dashboard, arch-web-dashboard (+2 fork). Tier 1–3, pr-only, human-merge. Reviewer: qa-review. Chief: kirana. Registry: ecosystem-omb/registry/omb/repos.yaml.",
     "notifications": true,
     "color": "red",
     "unread": false,
-    "resumeCursors": {},
-    "createdAt": 1792346237368,
-    "section": "Engineering",
+    "resumeCursors": {
+      "opencodeGo": "ses_ea8517401ffezKR4EbyQvnO4pz"
+    },
+    "createdAt": 1792418393461,
+    "section": "Web & Portal",
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-2.5-pro"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "1a4828af-fd53-4b7e-ba83-220a76ed9ec1",
+        "threadId": "608c7a55-fb10-4756-9d62-d7edc6b701d7",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792486600702,
+        "updatedAt": 1792486674889,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792486600702
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792486674883,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 28378,
+          "output": 450,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 28378,
+            "output": 450,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "25e275ab-9ebc-47ca-8f80-05f66fd55369",
+        "title": "@Assistant · work",
+        "createdAt": 1792468821930,
+        "updatedAt": 1792609880795,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792468821930,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8517401ffezKR4EbyQvnO4pz"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792609880791,
+        "cwd": "/data/.openmausbot/task-workspaces/81de5f4d-8f2e-4b32-a9ca-f547d914fce3/25e275ab-9ebc-47ca-8f80-05f66fd55369",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 1669757,
+          "output": 8522,
+          "cachedInput": 276800,
+          "costUsd": null,
+          "turns": 5,
+          "lastTurn": {
+            "input": 120339,
+            "output": 725,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "058268be-af3b-47a2-88e4-4c082fb1d31f",
+        "askedAt": 1792509319979
+      },
+      {
+        "threadId": "b384cc8c-7750-4b31-82b1-75fef1f0ee07",
         "title": "New thread",
-        "createdAt": 1792346237368,
-        "updatedAt": 1792346237368,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -218,36 +728,162 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "0dd5f89101b40b1d469cab6f5760e78bf7003a6e827ca4399c1b70826033b89e",
+    "soulHash": "66e5fbc7890af28caf06227cea6452cef77d3b94296cfb95ac58065f70a2176e",
     "soulDrift": false
   },
   {
-    "id": "763b9848-ac43-455e-b8e2-e44e6c92878b",
-    "threadId": "e39b6b69-9491-4638-96b3-b7625683670d",
-    "name": "Rex",
-    "title": "Engineering Lead / Architect",
-    "description": "",
-    "soul": "You are the engineering lead and architect for this team, working on the Niumination ecosystem (GitHub: Niumination). The stack is TypeScript/Next.js/React first, then Python, Rust/Tauri, Shell and Docker. Domains: OSS dashboards, AI agents (Hermes), Indonesian government portals (SPBE, PemdiAcehTengah), desktop apps (Tauri), Telegram Mini Apps. Own technical design, split work into tasks, review output, and coordinate backend, frontend, Rust/Tauri, AI and DevOps specialists. Prefer simple, boring solutions; use the standard library and already-installed dependencies first. Ask one clarifying question only when genuinely ambiguous; otherwise state assumptions and proceed. Return concrete artifacts: designs, diffs, code, review notes.",
+    "id": "73290f9d-4e24-45ea-b7a3-3f66db60c3a3",
+    "threadId": "9cba9856-9f60-457a-bd1f-84abb87df8a3",
+    "name": "kirana",
+    "title": "Chief — Web & Portal",
+    "description": "Chief tim Web & Portal: koordinasi dashboard & portal (9 repo, 7 own, 4 aktif).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/<bot>/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Chief tim Web & Portal (domain `web`: dashboard, portal pribadi — 9 repo, 7 own, 4 aktif). Koordinasikan `web-app`. Rencana: docs/RENCANA-INDUK.md di ecosystem-omb. Registry: ecosystem-omb/registry/omb/repos.yaml (penulis tunggal notaris). Jangan sentuh Hermes, vault, SOUL.md.",
     "notifications": true,
     "color": "blue",
     "unread": false,
     "resumeCursors": {},
-    "createdAt": 1792346237368,
-    "section": "Engineering",
+    "createdAt": 1792418393461,
+    "section": "Web & Portal",
+    "chiefOfStaff": true,
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-2.5-pro"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "autoApprove": false,
-    "composio": false,
+    "composio": true,
     "approvePeerComms": false,
-    "connectorTools": {},
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
     "tasks": [
       {
-        "threadId": "e39b6b69-9491-4638-96b3-b7625683670d",
+        "threadId": "9cba9856-9f60-457a-bd1f-84abb87df8a3",
+        "title": "Team incidents",
+        "createdAt": 1792509573060,
+        "updatedAt": 1792509624859,
+        "openedBy": {
+          "botId": "73290f9d-4e24-45ea-b7a3-3f66db60c3a3",
+          "name": "kirana",
+          "at": 1792509573060
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "lastThreadOrderAt": 1792509624855,
+        "usage": {
+          "input": 26543,
+          "output": 194,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 26543,
+            "output": 194,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "90bf1715-9b5e-46af-97c8-2f12b0bd5f3d"
+      },
+      {
+        "threadId": "048c28d0-8aa5-4ac7-a1ad-26604efe47e1",
+        "title": "@web-app · work",
+        "createdAt": 1792468852279,
+        "updatedAt": 1792472415466,
+        "openedBy": {
+          "botId": "81de5f4d-8f2e-4b32-a9ca-f547d914fce3",
+          "name": "web-app",
+          "threadId": "25e275ab-9ebc-47ca-8f80-05f66fd55369",
+          "at": 1792468852279,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea887b8adffeIaGMPzT4Tx375r"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792472415459,
+        "cwd": "/data/.openmausbot/task-workspaces/73290f9d-4e24-45ea-b7a3-3f66db60c3a3/048c28d0-8aa5-4ac7-a1ad-26604efe47e1",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 935323,
+          "output": 743,
+          "cachedInput": 913920,
+          "costUsd": null,
+          "turns": 9,
+          "lastTurn": {
+            "input": 323374,
+            "output": 249,
+            "cachedInput": 313600,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "81de5f4d-8f2e-4b32-a9ca-f547d914fce3",
+          "name": "web-app",
+          "at": 1792472415477
+        }
+      },
+      {
+        "threadId": "174f65d6-8837-4def-9765-049633d768d7",
+        "title": "@Assistant · work",
+        "createdAt": 1792463310388,
+        "updatedAt": 1792464603092,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792463310388,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8dc3f8bffez3lsiMHETKvZ7e"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792464603087,
+        "cwd": "/data/.openmausbot/task-workspaces/73290f9d-4e24-45ea-b7a3-3f66db60c3a3/174f65d6-8837-4def-9765-049633d768d7",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 111885,
+          "output": 1,
+          "cachedInput": 108288,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 111885,
+            "output": 1,
+            "cachedInput": 108288,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792464603104
+        }
+      },
+      {
+        "threadId": "880aef64-4e79-4111-8ffb-5b9759364438",
         "title": "New thread",
-        "createdAt": 1792346237368,
-        "updatedAt": 1792346237368,
+        "createdAt": 1792418393461,
+        "updatedAt": 1792418393461,
         "resumeCursors": {},
         "unread": false,
         "approvalMode": "full",
@@ -255,7 +891,1321 @@
         "alwaysAllow": []
       }
     ],
-    "soulHash": "9aaa2a54695b7451df2d257d56e6f3b9742660a4a3fe7a7ec48f844621fd126e",
+    "soulHash": "5f7b0d64a075dd7169bd332d0d9ebc08e77235bdffb40d9a66a857084e7e10a7",
+    "soulDrift": false
+  },
+  {
+    "id": "982f8fdd-cef4-40b7-b6cf-100042cc431b",
+    "threadId": "d9457843-7193-423b-a7c4-1e781e88820c",
+    "name": "publik-akuntabilitas",
+    "title": "Pelayanan Publik — Akuntabilitas & Data",
+    "description": "Pemilik repo akuntabilitas & data publik: mata-aihackfest-2026, mata-watchdog-pi, Niu-LKH, Smart-ASN-Gayo-Mengaji, niu-gayo-agroclimate.",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/publik-akuntabilitas/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Pelayanan Publik — akuntabilitas & data. Pemilik repo: mata-aihackfest-2026, mata-watchdog-pi, Niu-LKH, Smart-ASN-Gayo-Mengaji, niu-gayo-agroclimate. Tier 1–2, write_policy pr-only, approval human-merge. Reviewer: qa-review. Chief: wira. Registry: ecosystem-omb/registry/omb/repos.yaml.",
+    "notifications": true,
+    "color": "yellow",
+    "unread": false,
+    "resumeCursors": {},
+    "createdAt": 1792418150538,
+    "section": "Pelayanan Publik",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "7c49d9d8-99e5-4c79-a03a-740f4334c646",
+        "title": "@wira · work",
+        "createdAt": 1792463349274,
+        "updatedAt": 1792463673690,
+        "openedBy": {
+          "botId": "466a41de-1ef6-477d-893c-ad34d3d7632e",
+          "name": "wira",
+          "threadId": "0df812ec-5e82-4c67-80e9-0259f629be83",
+          "at": 1792463349274,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8dbb776ffe9Sz2MEaFqum714"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792463673650,
+        "cwd": "/data/.openmausbot/task-workspaces/982f8fdd-cef4-40b7-b6cf-100042cc431b/7c49d9d8-99e5-4c79-a03a-740f4334c646",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "link": "https://github.com/Niumination/Niu-LKH/pull/2",
+        "linkAuto": true,
+        "usage": {
+          "input": 66067,
+          "output": 191,
+          "cachedInput": 64256,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 66067,
+            "output": 191,
+            "cachedInput": 64256,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "466a41de-1ef6-477d-893c-ad34d3d7632e",
+          "name": "wira",
+          "at": 1792463673724
+        }
+      },
+      {
+        "threadId": "d9457843-7193-423b-a7c4-1e781e88820c",
+        "title": "New thread",
+        "createdAt": 1792418150538,
+        "updatedAt": 1792418150538,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "b67ee7ec4fcf8b2ceaa8f8382fd340ca0d2a42f6595ed3e6cc1047bde591bc65",
+    "soulDrift": false
+  },
+  {
+    "id": "4d8b0966-bea9-489a-8899-1d59dbb6f079",
+    "threadId": "db57cc61-a2e7-4bcc-ac09-43b5bdbaa571",
+    "name": "publik-portal",
+    "title": "Pelayanan Publik — Portal & Layanan",
+    "description": "Pemilik repo portal & layanan publik: PemdiAcehTengah, kms-spbe, SPBE-DevOps-Academy, pabrik-aplikasi-gas.",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/publik-portal/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Spesialis Pelayanan Publik — portal & layanan. Pemilik repo: PemdiAcehTengah, kms-spbe, SPBE-DevOps-Academy, pabrik-aplikasi-gas. Tier 1–2, write_policy pr-only, approval human-merge. Reviewer: qa-review. Chief: wira. Registry: ecosystem-omb/registry/omb/repos.yaml.",
+    "notifications": true,
+    "color": "pink",
+    "unread": false,
+    "resumeCursors": {},
+    "createdAt": 1792418150538,
+    "section": "Pelayanan Publik",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "699eb398-660f-4bb5-88e4-e78d30273d57",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792486565568,
+        "updatedAt": 1792486587466,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792486565568
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792486587462,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 28441,
+          "output": 213,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 28441,
+            "output": 213,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "4e99f506-17d8-4579-b969-e11893839c29",
+        "title": "@wira · work",
+        "createdAt": 1792463350167,
+        "updatedAt": 1792464808862,
+        "openedBy": {
+          "botId": "466a41de-1ef6-477d-893c-ad34d3d7632e",
+          "name": "wira",
+          "threadId": "0df812ec-5e82-4c67-80e9-0259f629be83",
+          "at": 1792463350167,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8dbb106ffe1ykNxHrPX0mmjq"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792464808858,
+        "cwd": "/data/.openmausbot/task-workspaces/4d8b0966-bea9-489a-8899-1d59dbb6f079/4e99f506-17d8-4579-b969-e11893839c29",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 140303,
+          "output": 1,
+          "cachedInput": 135936,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 140303,
+            "output": 1,
+            "cachedInput": 135936,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "466a41de-1ef6-477d-893c-ad34d3d7632e",
+          "name": "wira",
+          "at": 1792464808871
+        }
+      },
+      {
+        "threadId": "db57cc61-a2e7-4bcc-ac09-43b5bdbaa571",
+        "title": "New thread",
+        "createdAt": 1792418150538,
+        "updatedAt": 1792418150538,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "db088fee3ff19f6a506cbc180c01f68513aeb13b8c1a3bdb7aa7ef2ee3aa43c8",
+    "soulDrift": false
+  },
+  {
+    "id": "466a41de-1ef6-477d-893c-ad34d3d7632e",
+    "threadId": "0df812ec-5e82-4c67-80e9-0259f629be83",
+    "name": "wira",
+    "title": "Chief — Pelayanan Publik",
+    "description": "Chief tim Pelayanan Publik: koordinasi portal & akuntabilitas publik (9 repo, semua aktif, risiko tertinggi).",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/<bot>/<YYYYMMDD>-<slug>.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nPERAN: Chief tim Pelayanan Publik. Domain `publik` = 9 repo, semuanya milik sendiri dan aktif, nol fork — risiko tertinggi (portal Pemkab, watchdog pengadaan, kepegawaian). Koordinasikan `publik-portal` dan `publik-akuntabilitas`. Rencana induk: docs/RENCANA-INDUK.md di repo ecosystem-omb. Registry: ecosystem-omb/registry/omb/repos.yaml (penulis tunggal: notaris, via PR). Jangan sentuh konfigurasi Hermes, vault, SOUL.md, cron Hermes.",
+    "notifications": true,
+    "color": "cyan",
+    "unread": false,
+    "resumeCursors": {
+      "opencodeGo": "ses_ea8c583e4ffeJPglJ2DVuQsTXK"
+    },
+    "createdAt": 1792418150538,
+    "section": "Pelayanan Publik",
+    "chiefOfStaff": true,
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "0df812ec-5e82-4c67-80e9-0259f629be83",
+        "title": "@Assistant · work",
+        "createdAt": 1792463310400,
+        "updatedAt": 1792474002331,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792463310400,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8c583e4ffeJPglJ2DVuQsTXK"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792474002327,
+        "cwd": "/data/.openmausbot/task-workspaces/466a41de-1ef6-477d-893c-ad34d3d7632e/0df812ec-5e82-4c67-80e9-0259f629be83",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 508609,
+          "output": 866,
+          "cachedInput": 489600,
+          "costUsd": null,
+          "turns": 4,
+          "lastTurn": {
+            "input": 198135,
+            "output": 352,
+            "cachedInput": 192000,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "cb64207b-e881-4ed1-ab5a-7a14629968c5",
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792474002342
+        }
+      },
+      {
+        "threadId": "08aa8e69-60e0-4570-a345-a12421674487",
+        "title": "New thread",
+        "createdAt": 1792418150538,
+        "updatedAt": 1792418150538,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "09a72f85d612f7ecc5bf8ffe545c378eb460b4d0cf67df305aae4359cb54c8d8",
+    "soulDrift": false
+  },
+  {
+    "id": "556d2dae-aaa3-4fe1-b80c-6affad5af132",
+    "threadId": "1789c2f5-881e-4886-bf01-70ffb424e6f9",
+    "name": "sec-scan",
+    "title": "Layanan bersama — Secret & Dependency Scan",
+    "description": "Scan secret & dependency vulnerability di repo tier 1-3. Pakai .gitleaks.toml dari ecosystem-config. Lapor finding via issue, bukan langsung fix. Aturan: satu PR satu perubahan; branch omb/sec-scan/Y…",
+    "soul": "Scan secret & dependency vulnerability di repo tier 1-3. Pakai .gitleaks.toml dari ecosystem-config. Lapor finding via issue, bukan langsung fix. Aturan: satu PR satu perubahan; branch omb/sec-scan/YYYYMMDD-slug; jangan sentuh Hermes/vault/SOUL.md; fork tier 4 tidak pernah ditulis; tanpa secret/PII; ada bukti verifikasi.",
+    "notifications": true,
+    "color": "purple",
+    "unread": false,
+    "resumeCursors": {},
+    "createdAt": 1792384045118,
+    "section": "Kantor Pusat",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "3e484831-133f-42ee-892f-02c989584f5b",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792486352849,
+        "updatedAt": 1792486553768,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792486352849
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792486553764,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 28366,
+          "output": 930,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 28366,
+            "output": 930,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "5f742cf9-4825-42ed-a92d-b7b7fa934b12",
+        "title": "@Assistant · work",
+        "createdAt": 1792463310443,
+        "updatedAt": 1792471772166,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792463310443,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8dc3fe3ffes3sCGzy1O6YttM"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792468822012,
+        "cwd": "/data/.openmausbot/task-workspaces/556d2dae-aaa3-4fe1-b80c-6affad5af132/5f742cf9-4825-42ed-a92d-b7b7fa934b12",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 187158,
+          "output": 292,
+          "cachedInput": 180800,
+          "costUsd": null,
+          "turns": 2,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "1789c2f5-881e-4886-bf01-70ffb424e6f9",
+        "title": "New thread",
+        "createdAt": 1792384045118,
+        "updatedAt": 1792384045118,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "0a9cc787836b2dc2142243119f3ec3faeabcdd7f435509e36d58df1d6f974683",
+    "soulDrift": false
+  },
+  {
+    "id": "ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3",
+    "threadId": "56022efb-746e-4182-8de0-0911e15010d8",
+    "name": "notaris",
+    "title": "Sekretaris — Registry & Repository Census",
+    "description": "Pemilik tunggal registry ecosystem-config/registry/omb/repos.yaml + 5 repo domain lain. Sensus harian banding GitHub API vs registry, selisih = satu PR. Aturan: angka hanya dari API/registry; satu PR…",
+    "soul": "Pemilik tunggal registry ecosystem-config/registry/omb/repos.yaml + 5 repo domain lain. Sensus harian banding GitHub API vs registry, selisih = satu PR. Aturan: angka hanya dari API/registry; satu PR satu perubahan; branch omb/notaris/YYYYMMDD-slug; jangan sentuh Hermes/vault/SOUL.md; fork tier 4 tidak pernah ditulis; tanpa secret/PII; ada bukti verifikasi.",
+    "notifications": true,
+    "color": "orange",
+    "unread": true,
+    "resumeCursors": {
+      "opencodeGo": "ses_eaaa40ee8ffe7SAWale7aoqt1g"
+    },
+    "createdAt": 1792384043007,
+    "section": "Kantor Pusat",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "3757385f-3ffe-408c-9357-dc61754ef11f",
+        "title": "sensus-repo · Oct 23, 11:00 PM",
+        "createdAt": 1792796407606,
+        "updatedAt": 1792796475059,
+        "resumeCursors": {
+          "opencodeGo": "ses_e9501bd22ffesaNsVxv03E5cWN"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "e038e0b8-8dab-4c99-a591-199c5fae6c4a",
+        "lastThreadOrderAt": 1792796407625,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/3757385f-3ffe-408c-9357-dc61754ef11f",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "8df6e1e0-e91a-4d45-9c32-6ebd924ad44c",
+        "title": "sensus-repo · Oct 23, 5:40 AM",
+        "createdAt": 1792734003607,
+        "updatedAt": 1792734075293,
+        "resumeCursors": {
+          "opencodeGo": "ses_e98b9de76ffeY6xwA169uLsjVM"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "3f8aa140-263a-4682-b514-753068423a23",
+        "lastThreadOrderAt": 1792734003930,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/8df6e1e0-e91a-4d45-9c32-6ebd924ad44c",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "ae33d8c4-0de3-4485-b188-95b39c4c442a",
+        "title": "@qa-review · work",
+        "createdAt": 1792720991204,
+        "updatedAt": 1792721022490,
+        "openedBy": {
+          "botId": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+          "name": "qa-review",
+          "threadId": "f244f867-15ee-4ec1-b2f9-75222cd88915",
+          "at": 1792720991204,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_e99807e87ffe6M7bxUXrgm2l1A"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792721022459,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/ae33d8c4-0de3-4485-b188-95b39c4c442a",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 38973,
+          "output": 444,
+          "cachedInput": 32128,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 38973,
+            "output": 444,
+            "cachedInput": 32128,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+          "name": "qa-review",
+          "at": 1792721022509
+        }
+      },
+      {
+        "threadId": "d6b89fd6-a5a0-4a85-99b4-af6aa86083db",
+        "title": "sensus-repo · Oct 22, 11:00 PM",
+        "createdAt": 1792710003294,
+        "updatedAt": 1792710438317,
+        "resumeCursors": {
+          "opencodeGo": "ses_e9a282850ffeTZcUqQVNDKKg8o"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "dcd4ca0f-f1b3-4dfd-8b73-bf7d4e698a62",
+        "lastThreadOrderAt": 1792710438304,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/d6b89fd6-a5a0-4a85-99b4-af6aa86083db",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 61016,
+          "output": 228,
+          "cachedInput": 60544,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 61016,
+            "output": 228,
+            "cachedInput": 60544,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "8cb7b7a5-f519-4bef-bc29-1449b16e057e",
+        "title": "sensus-repo · Oct 22, 9:10 AM",
+        "createdAt": 1792660200292,
+        "updatedAt": 1792660564303,
+        "resumeCursors": {
+          "opencodeGo": "ses_e9d2003f4ffeYjXpoMcBcNkgHa"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "07581452-fa63-4e9a-81af-7ef7cf6e11fb",
+        "lastThreadOrderAt": 1792660564241,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/8cb7b7a5-f519-4bef-bc29-1449b16e057e",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 61261,
+          "output": 185,
+          "cachedInput": 60672,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 61261,
+            "output": 185,
+            "cachedInput": 60672,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "e88f8853-850c-4931-94e5-af57485575bd",
+        "title": "sensus-repo · Oct 21, 11:00 PM",
+        "createdAt": 1792623600927,
+        "updatedAt": 1792623600927,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "00c28ffd-4d65-4f46-8183-cf5d3efa6f81"
+      },
+      {
+        "threadId": "a1428efa-c543-41eb-a751-0eeaa5972320",
+        "title": "sensus-repo · Oct 21, 4:12 AM",
+        "createdAt": 1792555937014,
+        "updatedAt": 1792555937014,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "f504276a-5900-41fa-8668-f2c4080a5008"
+      },
+      {
+        "threadId": "1498594b-a6b3-4ab4-be70-c5e5394f844f",
+        "title": "@qa-review · work",
+        "createdAt": 1792548054235,
+        "updatedAt": 1792548329024,
+        "openedBy": {
+          "botId": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+          "name": "qa-review",
+          "threadId": "cb7aa42a-2d6d-4662-8912-4df97315bbe6",
+          "at": 1792548054235,
+          "kind": "work"
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792548328967,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 445929,
+          "output": 8022,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 445929,
+            "output": 8022,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+          "name": "qa-review",
+          "at": 1792548328987
+        }
+      },
+      {
+        "threadId": "107fc272-c73b-4df2-9418-d792b5210a92",
+        "title": "sensus-repo · Oct 20, 11:00 PM",
+        "createdAt": 1792537208713,
+        "updatedAt": 1792537445694,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "04aac7cb-7e48-4752-a3c9-64f027960693",
+        "lastThreadOrderAt": 1792537445549,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 216240,
+          "output": 7155,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 216240,
+            "output": 7155,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "2dd50580-080b-44f0-b9cc-6ad0d72df692",
+        "title": "Tes verifikasi model — ini TES, bukan kerjaan baru. Jangan p",
+        "createdAt": 1792483427652,
+        "updatedAt": 1792483700020,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+          "at": 1792483427652
+        },
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792483469156,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 28676,
+          "output": 83,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 28676,
+            "output": 83,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792483700020
+        }
+      },
+      {
+        "threadId": "26f2f95e-1ef0-42a2-aa29-1b4f5dde305e",
+        "title": "@qa-review · work",
+        "createdAt": 1792461630127,
+        "updatedAt": 1792461706896,
+        "openedBy": {
+          "botId": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+          "name": "qa-review",
+          "threadId": "2a5ad38d-4ee6-4956-9741-06bdeca42b47",
+          "at": 1792461630127,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8f607dcffejKT17e9awazYuJ"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792461706891,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/26f2f95e-1ef0-42a2-aa29-1b4f5dde305e",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 72212,
+          "output": 349,
+          "cachedInput": 67584,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 72212,
+            "output": 349,
+            "cachedInput": 67584,
+            "costUsd": null
+          }
+        },
+        "closedBy": {
+          "botId": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+          "name": "qa-review",
+          "at": 1792461706904
+        }
+      },
+      {
+        "threadId": "559e1eca-ae4d-4827-9209-11e55c5a8c1a",
+        "title": "sensus-repo · Oct 19, 11:00 PM",
+        "createdAt": 1792450805063,
+        "updatedAt": 1792451856525,
+        "resumeCursors": {
+          "opencodeGo": "ses_ea99b3270ffe7KTL7dxJQUpbCK"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "d0cb0a0d-ea33-4618-b881-8daebf68220f",
+        "lastThreadOrderAt": 1792451856521,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/559e1eca-ae4d-4827-9209-11e55c5a8c1a",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 143654,
+          "output": 129,
+          "cachedInput": 142208,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 143654,
+            "output": 129,
+            "cachedInput": 142208,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "56022efb-746e-4182-8de0-0911e15010d8",
+        "title": "@Assistant · work",
+        "createdAt": 1792433448175,
+        "updatedAt": 1792796407603,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792433448175,
+          "kind": "work"
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_eaaa40ee8ffe7SAWale7aoqt1g"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": true,
+        "lastThreadOrderAt": 1792469368599,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/56022efb-746e-4182-8de0-0911e15010d8",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 175379,
+          "output": 1315,
+          "cachedInput": 164736,
+          "costUsd": null,
+          "turns": 3,
+          "lastTurn": {
+            "input": 115644,
+            "output": 548,
+            "cachedInput": 114816,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "029865b9-1555-480c-82e0-ea9f29cc589a",
+        "link": "https://github.com/Niumination/ecosystem-omb/pull/11",
+        "linkAuto": true,
+        "closedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792469368639
+        }
+      },
+      {
+        "threadId": "e786a205-b12d-4994-bfb6-ba8dc44078c9",
+        "title": "Tugas: update dokumentasi repo `Niumination/ecosystem-omb` u",
+        "createdAt": 1792433207748,
+        "updatedAt": 1792433362938,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792433207747
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_eaaa7b961ffeEUIXKa6xuEc3Os"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792433362838,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/e786a205-b12d-4994-bfb6-ba8dc44078c9",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "link": "https://github.com/Niumination/ecosystem-omb/pull/8",
+        "linkAuto": true,
+        "usage": {
+          "input": 85607,
+          "output": 368,
+          "cachedInput": 84992,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 85607,
+            "output": 368,
+            "cachedInput": 84992,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "7a72c86f-8bb3-42b2-98ac-25cf92ba8dec",
+        "title": "sensus-repo · Oct 19, 4:30 PM",
+        "createdAt": 1792427426392,
+        "updatedAt": 1792428413521,
+        "resumeCursors": {
+          "opencodeGo": "ses_eaaffedd0ffewKo5etGgLwBZr5"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "63b7d432-454b-4410-829d-5684bd828d40",
+        "lastThreadOrderAt": 1792428413517,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/7a72c86f-8bb3-42b2-98ac-25cf92ba8dec",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 125910,
+          "output": 491,
+          "cachedInput": 123648,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 125910,
+            "output": 491,
+            "cachedInput": 123648,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "b235dbcd-3f6a-4ebc-a4bd-e48114744bf2",
+        "title": "Tugas klasifikasi 5 repo domain 'lain' di GitHub Niumination",
+        "createdAt": 1792384423911,
+        "updatedAt": 1792427426390,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+          "at": 1792384423911
+        },
+        "resumeCursors": {
+          "opencodeGo": "ses_ead901c47ffevnch3QDcBvJwNs"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "lastThreadOrderAt": 1792384584453,
+        "cwd": "/data/.openmausbot/task-workspaces/ddfa48e9-d52c-41a0-a3af-4662f0d7fcb3/b235dbcd-3f6a-4ebc-a4bd-e48114744bf2",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 89813,
+          "output": 855,
+          "cachedInput": 85888,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 89813,
+            "output": 855,
+            "cachedInput": 85888,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "d7f8e8d5-d2fe-4d06-8399-10285643e1b2"
+      },
+      {
+        "threadId": "1c9313c1-35e2-46f5-bef0-d7e2f0aa855e",
+        "title": "New thread",
+        "createdAt": 1792384043007,
+        "updatedAt": 1792384043007,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "b0f1ae31a6074b1006dc4b766f78f7035ca57369a37cb50805575e15b9dcd2c6",
+    "soulDrift": false
+  },
+  {
+    "id": "b9ad2b56-ac98-411e-a529-172986960238",
+    "threadId": "a2a350c2-d93b-4256-b9b3-e7bb4973cd0f",
+    "name": "ops-watch",
+    "title": "Layanan bersama — Health & Incident Watch",
+    "description": "ATURAN PERUSAHAAN — NIUMINATION WORKS",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/ops-watch/YYYYMMDD-slug.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nTUGAS UTAMA: Pantau kesehatan 13 repo tier 1 (CI, deploy, downtime). Deteksi insiden, escalate ke Chief of Staff. Jangan pulihkan tanpa approval.",
+    "notifications": true,
+    "color": "red",
+    "unread": false,
+    "resumeCursors": {},
+    "createdAt": 1792384023596,
+    "section": "Kantor Pusat",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "a2a350c2-d93b-4256-b9b3-e7bb4973cd0f",
+        "title": "New thread",
+        "createdAt": 1792384023596,
+        "updatedAt": 1792384023596,
+        "resumeCursors": {},
+        "unread": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "618d36ae22189555a17f151cc88669e4a5747073b5a4534a70f38be1cd152c3a",
+    "soulDrift": false
+  },
+  {
+    "id": "a33aed25-bc0f-4bd0-bb0c-d794ef8d140f",
+    "threadId": "ef791a19-42f4-4af5-bd72-6fa3078e2c7a",
+    "name": "qa-review",
+    "title": "Layanan bersama — QA / PR Review",
+    "description": "ATURAN PERUSAHAAN — NIUMINATION WORKS",
+    "soul": "ATURAN PERUSAHAAN — NIUMINATION WORKS\n\n1. Satu perubahan, satu verifikasi, satu laporan. Jangan pernah dua.\n2. Angka hanya dari registry atau GitHub API. Tidak pernah dari ingatan.\n3. Satu repo = satu pemilik. Dua bot butuh menulis repo yang sama? Berhenti dan eskalasi.\n4. Sebelum menulis ke GitHub, cocokkan dengan matriks approval. Ragu = butuh.\n5. Tidak ada secret atau PII dalam commit, PR, issue, laporan, atau dokumen. Nama variabel saja.\n6. Tidak ada force-push, rewrite history, atau penghapusan. Kapan pun.\n7. Satu PR = satu perubahan. Branch: omb/qa-review/YYYYMMDD-slug.\n8. Setiap laporan perubahan menyebut perintah verifikasi dan keluarannya. Tidak ada bukti = belum selesai.\n9. Kalau tidak ada masalah, diam.\n10. Jangan menyentuh apa pun milik ekosistem Hermes.\n11. Fork (tier 4) tidak pernah ditulis. Kapan pun, apa pun alasannya.\n\nTUGAS UTAMA: Review PR semua tim. Cek correctness, tests, coding standards, secret exposure. Comment PR, approve, atau request changes.",
+    "notifications": true,
+    "color": "blue",
+    "unread": true,
+    "resumeCursors": {},
+    "createdAt": 1792384013897,
+    "section": "Kantor Pusat",
+    "modelSelection": {
+      "instanceId": "opencodeGo",
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
+    },
+    "autoApprove": false,
+    "composio": true,
+    "approvePeerComms": false,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "tasks": [
+      {
+        "threadId": "416f44ab-7e82-46b5-b705-489050fda042",
+        "title": "review-pr · Oct 24, 8:00 AM",
+        "createdAt": 1792828809462,
+        "updatedAt": 1792828878461,
+        "resumeCursors": {
+          "opencodeGo": "ses_e9313532effeYtRopZNfdkm7fL"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "4b4afa41-9952-4905-ae39-d3414db0f1f2",
+        "lastThreadOrderAt": 1792828809473,
+        "cwd": "/data/.openmausbot/task-workspaces/a33aed25-bc0f-4bd0-bb0c-d794ef8d140f/416f44ab-7e82-46b5-b705-489050fda042",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "6f3ad5d6-3842-40e3-bc76-3e87d4b38509",
+        "title": "review-pr · Oct 24, 2:00 AM",
+        "createdAt": 1792807208248,
+        "updatedAt": 1792807277516,
+        "resumeCursors": {
+          "opencodeGo": "ses_e945cef7bffeHrDtRpKZCe9a66"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "3816fcad-0a31-4e3e-be13-0ba8a2e7d18c",
+        "lastThreadOrderAt": 1792807208259,
+        "cwd": "/data/.openmausbot/task-workspaces/a33aed25-bc0f-4bd0-bb0c-d794ef8d140f/6f3ad5d6-3842-40e3-bc76-3e87d4b38509",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "5a6dff4f-bc0a-4b98-ad02-b5da8ec95293",
+        "title": "review-pr · Oct 23, 8:00 AM",
+        "createdAt": 1792742404549,
+        "updatedAt": 1792742470623,
+        "resumeCursors": {
+          "opencodeGo": "ses_e9839c2a4ffe4UrifZmGlnG1s5"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "50cb9a5c-478f-4d7c-bb81-73cbda5b04c9",
+        "lastThreadOrderAt": 1792742404561,
+        "cwd": "/data/.openmausbot/task-workspaces/a33aed25-bc0f-4bd0-bb0c-d794ef8d140f/5a6dff4f-bc0a-4b98-ad02-b5da8ec95293",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 0,
+          "output": 0,
+          "costUsd": null,
+          "turns": 1,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "f244f867-15ee-4ec1-b2f9-75222cd88915",
+        "title": "review-pr · Oct 23, 2:00 AM",
+        "createdAt": 1792720803933,
+        "updatedAt": 1792721485222,
+        "resumeCursors": {
+          "opencodeGo": "ses_e99792371ffe2al3SUqnjoOiKA"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "bae83a48-f241-424e-b770-04677e62dcc9",
+        "lastThreadOrderAt": 1792721485213,
+        "cwd": "/data/.openmausbot/task-workspaces/a33aed25-bc0f-4bd0-bb0c-d794ef8d140f/f244f867-15ee-4ec1-b2f9-75222cd88915",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 147399,
+          "output": 773,
+          "cachedInput": 115456,
+          "costUsd": null,
+          "turns": 2,
+          "lastTurn": {
+            "input": 33449,
+            "output": 389,
+            "cachedInput": 1792,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "1d9cf744-905b-4c80-baad-d6da770298a6",
+        "title": "review-pr · Oct 22, 8:00 AM",
+        "createdAt": 1792656002709,
+        "updatedAt": 1792656002709,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "e4836958-346a-44a7-83ac-63a95f6178bd"
+      },
+      {
+        "threadId": "d359ef69-d844-449c-b8d5-90b3aace3dc0",
+        "title": "review-pr · Oct 22, 2:00 AM",
+        "createdAt": 1792634401505,
+        "updatedAt": 1792634401505,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "220fa1dc-9c63-4720-b9f2-2ae75999ab8c"
+      },
+      {
+        "threadId": "7c460f7f-8463-4442-9c8e-20cd363f15a9",
+        "title": "review-pr · Oct 21, 8:00 AM",
+        "createdAt": 1792569607949,
+        "updatedAt": 1792569607949,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "c7627900-6275-4ba2-8a8d-bf55a5f2d64c"
+      },
+      {
+        "threadId": "cb7aa42a-2d6d-4662-8912-4df97315bbe6",
+        "title": "review-pr · Oct 21, 2:00 AM",
+        "createdAt": 1792548009281,
+        "updatedAt": 1792550483178,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "107ba685-7661-41dd-aa0e-a27016b53092",
+        "lastThreadOrderAt": 1792550482919,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 4059568,
+          "output": 26112,
+          "costUsd": null,
+          "turns": 2,
+          "lastTurn": {
+            "input": 3650868,
+            "output": 21298,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "04846cf5-d567-400a-a92d-8612ac986ea0",
+        "title": "review-pr · Oct 20, 8:00 AM",
+        "createdAt": 1792483206387,
+        "updatedAt": 1792484672532,
+        "resumeCursors": {},
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "9179651f-b41b-410a-a31b-65f09ed19ab4",
+        "lastThreadOrderAt": 1792484672528,
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 880604,
+          "output": 16638,
+          "costUsd": null,
+          "turns": 2,
+          "lastTurn": {
+            "input": 571092,
+            "output": 12063,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "2a5ad38d-4ee6-4956-9741-06bdeca42b47",
+        "title": "review-pr · Oct 20, 2:00 AM",
+        "createdAt": 1792461605414,
+        "updatedAt": 1792461743758,
+        "resumeCursors": {
+          "opencodeGo": "ses_ea8f4d998ffeU8bsz2mdW7A8U1"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "routineRunId": "22ccdddb-0a7c-4697-ae3e-8f1d47d0cdc9",
+        "lastThreadOrderAt": 1792461743755,
+        "cwd": "/data/.openmausbot/task-workspaces/a33aed25-bc0f-4bd0-bb0c-d794ef8d140f/2a5ad38d-4ee6-4956-9741-06bdeca42b47",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 78796,
+          "output": 103,
+          "cachedInput": 38272,
+          "costUsd": null,
+          "turns": 2,
+          "lastTurn": {
+            "input": 41834,
+            "output": 86,
+            "cachedInput": 1792,
+            "costUsd": null
+          }
+        }
+      },
+      {
+        "threadId": "ef791a19-42f4-4af5-bd72-6fa3078e2c7a",
+        "title": "New thread",
+        "createdAt": 1792384013897,
+        "updatedAt": 1792828809461,
+        "resumeCursors": {},
+        "unread": true,
+        "lastReadMessageId": "50c6b112-856f-4e76-b9b8-907923f1c48d",
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": []
+      }
+    ],
+    "soulHash": "aa8240d74cb83ead026bf56a779207c34b2ab93458ac71bb3d3599e5a6168d9f",
     "soulDrift": false
   },
   {
@@ -271,48 +2221,126 @@
     "unread": false,
     "modelSelection": {
       "instanceId": "opencodeGo",
-      "model": "9router/agnes/agnes-2.5-flash"
+      "model": "9router/nous/meituan/longcat-2.5-preview:free"
     },
     "resumeCursors": {
-      "opencodeGo": "ses_eafd8a203ffeJiPgNNI7GPOILz"
+      "opencodeGo": "ses_ea01cf092ffeWZDv6iBqFZGjRC"
     },
     "createdAt": 1792342353910,
     "tasks": [
       {
-        "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
-        "title": "Bisa gak kamu setup team untukku?",
-        "createdAt": 1792342353910,
-        "updatedAt": 1792346641284,
-        "resumeCursors": {
-          "opencodeGo": "ses_eafd8a203ffeJiPgNNI7GPOILz"
+        "threadId": "006f4705-e924-4ada-ba6c-7863bc79f9be",
+        "title": "Team incidents",
+        "createdAt": 1792483615716,
+        "updatedAt": 1792742538438,
+        "openedBy": {
+          "botId": "796e344f-6be2-491e-ba0c-322407f22414",
+          "name": "Assistant",
+          "at": 1792483615716
         },
+        "resumeCursors": {
+          "opencodeGo": "ses_e98b8da45ffe2k8vlDu1AFxLi1"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
         "unread": false,
-        "lastThreadOrderAt": 1792346641279,
+        "lastInstanceId": "opencodeGo",
+        "lastThreadOrderAt": 1792537475105,
+        "usage": {
+          "input": 221325,
+          "output": 4915,
+          "costUsd": null,
+          "turns": 4,
+          "lastTurn": {
+            "input": 0,
+            "output": 0,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "33c3b063-ece0-4723-b856-54f29c98fe73",
+        "cwd": "/data/.openmausbot/task-workspaces/796e344f-6be2-491e-ba0c-322407f22414/006f4705-e924-4ada-ba6c-7863bc79f9be",
+        "surface": "browser",
+        "surfaceSource": "auto"
+      },
+      {
+        "threadId": "537558da-1fbc-491f-80e7-30f62a1ec786",
+        "title": "Konfigurasi",
+        "createdAt": 1792426682045,
+        "updatedAt": 1792724833382,
+        "resumeCursors": {
+          "grok": "01a162c0-2881-7d72-8116-4f5e4d9d6a45",
+          "opencodeGo": "ses_e9d372597ffe17SiPAWIOazaND"
+        },
+        "approvalMode": "full",
+        "autoApprove": false,
+        "alwaysAllow": [],
+        "unread": false,
+        "titleFromFirstMessage": true,
+        "lastThreadOrderAt": 1792724833342,
+        "askedAt": 1792724344118,
+        "cwd": "/data/.openmausbot/task-workspaces/796e344f-6be2-491e-ba0c-322407f22414/537558da-1fbc-491f-80e7-30f62a1ec786",
+        "surface": "browser",
+        "surfaceSource": "auto",
+        "lastInstanceId": "opencodeGo",
+        "usage": {
+          "input": 4069541,
+          "output": 53236,
+          "cachedInput": 843008,
+          "costUsd": null,
+          "turns": 49,
+          "lastTurn": {
+            "input": 187832,
+            "output": 287,
+            "costUsd": null
+          }
+        },
+        "lastReadMessageId": "f26a3c45-87d1-495f-aa9c-7fe75d4bf871",
         "modelSelection": {
           "instanceId": "opencodeGo",
-          "model": "9router/nous/meituan/longcat-2.5-preview:free"
+          "model": "9router/agnes/agnes-2.5-flash"
+        },
+        "rewound": false
+      },
+      {
+        "threadId": "f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
+        "title": "Orkestrator",
+        "createdAt": 1792342353910,
+        "updatedAt": 1792827868775,
+        "resumeCursors": {
+          "opencodeGo": "ses_ea01cf092ffeWZDv6iBqFZGjRC"
+        },
+        "unread": false,
+        "lastThreadOrderAt": 1792827800263,
+        "modelSelection": {
+          "instanceId": "opencodeGo",
+          "model": "9router/agnes/agnes-2.5-flash"
         },
         "titleFromFirstMessage": true,
-        "askedAt": 1792346618888,
+        "askedAt": 1792827800263,
         "cwd": "/data/.openmausbot/task-workspaces/796e344f-6be2-491e-ba0c-322407f22414/f3659bb4-b91b-4b2f-a13c-a3dcd00766d7",
         "surface": "browser",
         "surfaceSource": "auto",
         "lastInstanceId": "opencodeGo",
         "usage": {
-          "input": 239106,
-          "output": 643,
-          "cachedInput": 230144,
+          "input": 20563416,
+          "output": 71152,
+          "cachedInput": 18626688,
           "costUsd": null,
-          "turns": 5,
+          "turns": 100,
           "lastTurn": {
-            "input": 80444,
-            "output": 221,
-            "cachedInput": 77824,
+            "input": 0,
+            "output": 0,
             "costUsd": null
           }
         },
-        "lastReadMessageId": "6b5ebcae-ff76-4bd5-9a8a-54e5291f20d1",
-        "rewound": false
+        "lastReadMessageId": "cb7ca8fb-afbb-40c2-8ff8-14904e5c0dc8",
+        "rewound": false,
+        "approvalMode": "full",
+        "autoApprove": false,
+        "link": "https://github.com/Niumination/ecosystem-omb/pull/9",
+        "linkAuto": true,
+        "alwaysAllow": []
       }
     ],
     "mascotExpression": "curious",
@@ -324,84 +2352,18 @@
     "chiefOfStaff": true,
     "hidden": false,
     "lastTeamSetupReceipt": {
-      "requestId": "82c63383-365a-46d3-8265-22e9ad86e0b5",
+      "requestId": "5084937c-7a09-4c3e-97cc-0c93400b13fd",
       "result": {
         "state": "applied",
         "newTeams": [],
         "bots": [
           {
-            "id": "763b9848-ac43-455e-b8e2-e44e6c92878b",
-            "name": "Rex",
-            "section": "Engineering",
+            "id": "b9ad2b56-ac98-411e-a529-172986960238",
+            "name": "ops-watch",
+            "section": "Kantor Pusat",
             "modelSelection": {
               "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-2.5-pro"
-            },
-            "chiefOfStaff": false,
-            "action": "updated"
-          },
-          {
-            "id": "7cff5ae4-c8d2-4e02-bff5-bccc29929cea",
-            "name": "Nadia",
-            "section": "Engineering",
-            "modelSelection": {
-              "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-2.5-pro"
-            },
-            "chiefOfStaff": false,
-            "action": "updated"
-          },
-          {
-            "id": "c103335e-3609-407f-ab60-6d46f94c7ccf",
-            "name": "Ika",
-            "section": "Engineering",
-            "modelSelection": {
-              "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-3.0-flash"
-            },
-            "chiefOfStaff": false,
-            "action": "updated"
-          },
-          {
-            "id": "a720a66e-aaba-4939-bd10-4d2f7c87b4eb",
-            "name": "Sora",
-            "section": "Engineering",
-            "modelSelection": {
-              "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-2.5-pro"
-            },
-            "chiefOfStaff": false,
-            "action": "updated"
-          },
-          {
-            "id": "d4393bea-66f8-4878-a521-668aee8dcd1e",
-            "name": "Dewi",
-            "section": "Engineering",
-            "modelSelection": {
-              "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-2.5-pro-beta"
-            },
-            "chiefOfStaff": false,
-            "action": "updated"
-          },
-          {
-            "id": "d94d2b8d-736c-4468-8940-e5c5bc78f35a",
-            "name": "Tomo",
-            "section": "Engineering",
-            "modelSelection": {
-              "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-3.0-flash"
-            },
-            "chiefOfStaff": false,
-            "action": "updated"
-          },
-          {
-            "id": "9dee57a9-1832-4ab3-b93b-098e32f4a7b7",
-            "name": "Bayu",
-            "section": "Engineering",
-            "modelSelection": {
-              "instanceId": "opencodeGo",
-              "model": "9router/agnes/agnes-2.5-flash"
+              "model": "9router/nous/meituan/longcat-2.5-preview:free"
             },
             "chiefOfStaff": false,
             "action": "updated"
@@ -410,7 +2372,22 @@
       }
     },
     "managedSections": [
-      "Engineering"
-    ]
+      "Kantor Pusat",
+      "Pelayanan Publik",
+      "Web & Portal",
+      "Perkakas",
+      "Pendidikan & Riset",
+      "Sistem & Lingkungan"
+    ],
+    "composio": true,
+    "connectorTools": {
+      "github": {
+        "tools": "*"
+      },
+      "slack": {
+        "tools": "*"
+      }
+    },
+    "browser": true
   }
 ]

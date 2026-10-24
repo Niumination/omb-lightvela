@@ -1,6 +1,6 @@
 {
   "onboarding": {
-    "completedAt": "2026-10-15T07:42:07.178Z",
+    "completedAt": "2026-10-24T07:45:05.334Z",
     "version": 1,
     "hintsSeen": [
       "tour.composer",
@@ -17,10 +17,10 @@
     ]
   },
   "openrouter": {
-    "key": "REDACTED"
+    "key": "[REDACTED]"
   },
   "composio": {
-    "apiKey": "REDACTED",
+    "apiKey": "[REDACTED]",
     "userId": "openmausbot_afad93e1-53e1-418a-8268-1882e886200c",
     "sessionId": "trs_rHYyoJw-eIv2"
   },
@@ -34,22 +34,22 @@
     "key": ""
   },
   "openaiCompat": {
-    "key": "REDACTED",
+    "key": "",
     "url": "https://api.hcnsec.cn/v1"
   },
   "profile": {
-    "name": "Niumination",
-    "email": ""
+    "name": "NIUMINATION",
+    "email": "archk4li@gmail.com"
   },
   "opencodeGo": {
     "providerKeys": {
-      "NINEROUTER_API_KEY": "REDACTED"
+      "NINEROUTER_API_KEY": "[REDACTED]"
     },
     "apiKey": ""
   },
   "defaultModelSelection": {
     "instanceId": "opencodeGo",
-    "model": "9router/agnes/agnes-2.5-flash"
+    "model": "9router/nous/meituan/longcat-2.5-preview:free"
   },
   "instances": {
     "grok": {
@@ -78,10 +78,7 @@
       "driver": "antigravityAgent"
     },
     "opencodeGo": {
-      "driver": "opencodeGo",
-      "config": {
-        "cli": "/usr/local/bin/opencode"
-      }
+      "driver": "opencodeGo"
     },
     "openaiCompat": {
       "driver": "openai-compat"
@@ -149,5 +146,25 @@
     "pi": {
       "driver": "piAgent"
     }
+  },
+  "mcpServers": {
+    "test": {
+      "type": "http",
+      "url": "http://example.com",
+      "headers": {},
+      "enabled": false
+    }
+  },
+  "safetyFloor": {
+    "enabled": true
+  },
+  "features": {
+    "sharedComputers": true
+  },
+  "automaticRecovery": {
+    "enabled": true
+  },
+  "decider": {
+    "provider": "openrouter"
   }
 }
