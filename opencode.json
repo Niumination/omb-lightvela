@@ -5,7 +5,7 @@
       "npm": "@ai-sdk/openai-compatible",
       "name": "9Router",
       "options": {
-        "baseURL": "http://omb-9router:20128/v1",
+        "baseURL": "http://127.0.0.1:20128/v1",
         "apiKey": "{env:NINEROUTER_API_KEY}"
       },
       "models": {

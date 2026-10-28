@@ -1,20 +1,12 @@
+# 29 Okt 2026: Caddy = pure reverse proxy ke OMB:8799 (host network).
+# /hooks/* di-handle OMB sendiri (v0.1.130) — tidak perlu route terpisah ke 8800.
 :80 {
 	encode zstd gzip
-	handle /hooks/* {
-		reverse_proxy 127.0.0.1:8800 {
-			header_up -X-Forwarded-For
-			header_up -X-Forwarded-Host
-			header_up -Forwarded
-			header_up X-Forwarded-Proto https
-		}
-	}
-	handle {
-		reverse_proxy 127.0.0.1:8799 {
-			flush_interval -1
-			header_up -X-Forwarded-For
-			header_up -X-Forwarded-Host
-			header_up -Forwarded
-			header_up X-Forwarded-Proto https
-		}
+	reverse_proxy 127.0.0.1:8799 {
+		flush_interval -1
+		header_up -X-Forwarded-For
+		header_up -X-Forwarded-Host
+		header_up -Forwarded
+		header_up X-Forwarded-Proto https
 	}
 }
