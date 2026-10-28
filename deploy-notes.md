@@ -43,3 +43,16 @@ Upgrade image OMB ke build terbaru DITAHAN sampai backup /data terverifikasi.
 - compose live: compose-live/docker-compose.yml (di ~/niumination/OpenMausBot/deploy/).
 - Verifikasi: container healthy, https://maus.abstract.biz.id -> 200,
   asset chunk 200, /data 1.2G ter-mount.
+
+## Restorasi integrasi OMB ↔ 9router — 29 Okt
+
+Upgrade OMB mereset integrasi (override & config hilang saat recreate).
+Dipulihkan:
+- compose.override.yaml disalin kembali ke deploy/ (env NINEROUTER_API_KEY
+  + volume RW /data/.config/opencode/opencode.json)
+- opencode.json: baseURL 127.0.0.1:20128, apiKey {env:NINEROUTER_API_KEY}
+- key di .env deploy (dari tabel apiKeys 9router)
+- Verifikasi: container healthy, env ter-inject, opencode models 9router/*
+  terdeteksi, 9router reachable 200 dari dalam container.
+Catatan: saat verifikasi, upstream model gratis sedang 429 (limit harian)
+— bukan masalah integrasi.
