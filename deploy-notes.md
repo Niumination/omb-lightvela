@@ -28,3 +28,18 @@ Tindakan:
 
 Hasil: 90% → 72% (14G free).
 Upgrade image OMB ke build terbaru DITAHAN sampai backup /data terverifikasi.
+
+## Upgrade OMB + perbaikan stack — 29 Okt 2026
+
+- Image upgraded ke ghcr.io/milind-soni/openmausbot:latest
+  (revision af59c2ec, build 28 Okt 16:40 UTC). Image lama dihapus.
+- OMB sekarang network_mode: host (bind 8799/8800 di host);
+  port publish 80/443 dihapus dari service omb — konflik bind dengan
+  Caddy host-network. Caddy tetap gerbang :80.
+- Volume data di-pin (name:) ke volume anonymous lama berisi 1.2G
+  workspace — compose sebelumnya nyaris membuat volume kosong baru.
+- Backup penuh /data sebelum upgrade: 462M tgz di ~/backups/
+  (omb-data-backup-20261029.tgz), terverifikasi 5844 entri.
+- compose live: compose-live/docker-compose.yml (di ~/niumination/OpenMausBot/deploy/).
+- Verifikasi: container healthy, https://maus.abstract.biz.id -> 200,
+  asset chunk 200, /data 1.2G ter-mount.
